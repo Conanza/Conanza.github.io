@@ -380,8 +380,7 @@
 
 				<div class="col-sm-4 col-sm-offset-4">
 					<div class="wow zoomIn text-center"><h3>Conan Tzou</h3></div>
-					<div class="wow zoomIn text-center" data-wow-delay=".2s"><i class="fa fa-phone"></i>  (408) 250-3396</div>
-					<div class="wow zoomIn text-center" data-wow-delay=".4s"><i class="fa fa-envelope"></i>  <a href="mailto:conantzou@gmail.com?Subject=Hello" target="_top">conantzou@gmail.com</a></div>
+					<div class="wow zoomIn text-center" data-wow-delay=".2s"><i class="fa fa-envelope"></i>  <a href="mailto:conantzou@gmail.com?Subject=Hello" target="_top">conantzou@gmail.com</a></div>
 				</div>
 			</div><!-- .row -->
 		</div><!-- .container -->
@@ -399,9 +398,7 @@
 						<li><a href="https://instagram.com/conanza/" class="wow fadeInUp" data-wow-delay=".3s" target="_blank"><i class="fa fa-instagram"></i></a></li>
 					</ul>
 
-          <p class="copyright">
-            © 2015 Conan Tzou
-					</p>
+          <p class="copyright"></p>
 				</div>
 			</div><!-- .row -->
 		</div><!-- .container -->
@@ -416,6 +413,11 @@
   <!-- Scroll to top end-->
 
 	<!-- Javascript files -->
+  <script>
+    var p = document.getElementsByClassName("copyright")[0];
+    var currentYear = (new Date).getFullYear();
+    p.innerHTML = "&copy; " + currentYear + " Conan Tzou";
+  </script>
 	<script src="assets/js/jquery-1.11.1.min.js"></script>
 	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 	<script src="assets/js/jquery.parallax-1.1.3.js"></script>
